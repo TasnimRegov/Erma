@@ -8,5 +8,5 @@ The dataset CoffeeMenu_.csv is the tested dataset used for the pincone indexes f
 
 Sources:
 i did the separate files for me to understand the code. 
-Once the code are function, i plan want to integrate with the DVC for the data and model versioning control.
+Once the code are function, will arrange the proper one. Then, i plan want to integrate with the DVC for the data and model versioning control.
 
