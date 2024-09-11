@@ -1,5 +1,5 @@
 # Erma
-Need to provide the Secret Key from:
+Need to create an account then provide the Secret Key from:
 - Pinecone
-- OpenAI
+- OpenAI (gpt)
 - HuggingFace
