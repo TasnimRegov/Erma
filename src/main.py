@@ -15,12 +15,14 @@ pineconekey = os.environ.get("pinecone")
 model_name = 'text-embedding-ada-002'
 EMBEDDING = OpenAIEmbeddings(model=model_name, api_key=openaikey)
 
-# CREATE PINECONE INDEX
+# CALL PINECONE INDEX
 pc = Pinecone(api_key=pineconekey)
 index_name = "fourthindex"
 index = pc.Index(index_name)
 
 
+#--------------------------------------------------------------------------------------#
+# RETRIEVE QUERY
 
 # find the best match from index    
 def find_k_best_match(query_text,k):
@@ -46,6 +48,9 @@ def find_k_best_match(query_text,k):
     # return best_match_texts
 
 
+
+#------------------------------------------------------------------------------------#
+# LLM INTEGRATION
 def prompt(context, query):
     header = """
     Answer the question as truthfully as possible using the provided context, 
